@@ -1,0 +1,18 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  labels:
+    app.kubernetes.io/name: openshift-planets
+  name: openshift-planets
+spec:
+  output:
+    to:
+      kind: DockerImage
+      name: quay.io/kuba_materac/openshift-planets:latest
+  source:
+    type: Binary
+    binary: {}
+  strategy:
+    type: Docker
+    dockerStrategy:
+      dockerfilePath: Dockerfile

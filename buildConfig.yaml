@@ -8,7 +8,7 @@ spec:
   output:
     to:
       kind: DockerImage
-      name: quay.io/kuba_materac/openshift-planets:latest
+      name: quay.io/zvzia/openshift-planets:latest
   source:
     type: Binary
     binary: {}
